@@ -1,0 +1,58 @@
+:root {
+  font-family: 'Roboto', sans-serif;
+  --text-color-light: #E0CCB9;
+}
+
+a {
+  color: var(--text-color-light);
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+}
+
+div.main-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+div.sign-up-container {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  width: auto;
+}
+
+div.left-container {
+  background-image: url(./images/alvan-nee-eoqnr8ikwFE-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex: 1;
+  position: relative;
+}
+
+.logo {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: bold;
+  position: absolute;
+  text-align: center;
+  font-size: 5rem;
+  top: 15%;
+  width: 100%;
+  color: var(--text-color-light);
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.img-credit {
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+  width: 100%;
+}
+
+ul > li {
+  list-style: none;
+}
