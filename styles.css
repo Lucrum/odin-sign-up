@@ -1,15 +1,35 @@
 :root {
   font-family: 'Roboto', sans-serif;
-  --text-color-light: #E0CCB9;
-}
-
-a {
-  color: var(--text-color-light);
-  text-decoration: none;
+  --text-color-light: cornsilk;
+  --text-color-dark: #D8532A;
+  --left-offset: 3rem;
 }
 
 body {
   margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.sign-in {
+  color: var(--text-color-dark);
+}
+
+div.credit-footer > a {
+  color: var(--text-color-light);
+}
+
+div.call-to-action {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+div.form-container {
+  flex: 2.5;
 }
 
 div.main-container {
@@ -19,11 +39,13 @@ div.main-container {
   box-sizing: border-box;
 }
 
-div.sign-up-container {
+div.right-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   flex: 2;
   width: auto;
+  background-color:whitesmoke;
 }
 
 div.left-container {
@@ -32,6 +54,20 @@ div.left-container {
   background-repeat: no-repeat;
   flex: 1;
   position: relative;
+}
+
+div.credit-footer {
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+  width: 100%;
+  color: var(--text-color-light);
+}
+
+div.sign-up-container {
+  background-color:white;
+  box-shadow: -5px 5px 5px lightgray;
+  padding: var(--left-offset);
 }
 
 .logo {
@@ -44,15 +80,54 @@ div.left-container {
   width: 100%;
   color: var(--text-color-light);
   background-color: rgba(0, 0, 0, 0.1);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
-.img-credit {
-  position: absolute;
-  bottom: 0px;
-  text-align: center;
-  width: 100%;
+.right-width {
+  width: 60%;
 }
 
-ul > li {
-  list-style: none;
+.left-offset {
+  margin-left: var(--left-offset);
+}
+
+ul {
+  padding: 0px;
+  list-style-type: none;
+  width: 70%;
+
+}
+
+ul.sign-up-fields > li {
+  display: inline-block;
+  margin-top: 2rem;
+  margin-right: 2rem;
+  width: 40%;
+}
+
+li > label,
+li > input[type=text],
+li > input[type=email],
+li > input[type=tel],
+li > input[type=password] {
+  display: block;
+  width: 85%;
+}
+
+li > input[type=text],
+li > input[type=email],
+li > input[type=tel],
+li > input[type=password] {
+  border-radius: 0.3rem;
+  border: 1px solid lightgray;
+  height: 2rem;
+}
+
+:focus {
+  outline: 0.1em solid darkgray;
+}
+
+form.sign-up > h1 {
+  margin: 0px;
 }
