@@ -20,57 +20,59 @@
         Photo by <a class="img-credit" href="https://unsplash.com/@alvannee?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Alvan Nee</a> on <a href="https://unsplash.com/photos/eoqnr8ikwFE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
       </div>
     </div>
-    <div class="right-container">
-      <div class="call-to-action left-offset right-width">
-        <div class="message">
+    <div class="right-container flex-column">
+      <div class="call-to-action left-offset right-width flex-column">
+        <h1>
           Arbor is an exclusive community of dogs. <em>So</em> many dogs. Join us in our mission to give
-          as many good boys as possible the love and attention they deserve. As a thank you, on top of receiving monthly
-          dogs in your mailbox, you will get:
-        </div>
-        <ul>
+        as many good boys as possible the love and attention they deserve. As a thank you, on top of receiving monthly
+        dogs in your mailbox, you will get:
+        </h1>
+          
+        <ul class="perks">
           <li>A thank you card, paw-printed by this month's best boy (or girl)</li>
           <li>Three (yes, three!) pounds of doggy nail clippings</li>
           <li>A crusty tennis ball, once covered in drool</li>
+          <li>...and more!</li>
         </ul>
       </div>
       <div class="form-container">
         <form class ="sign-up" action="./index.html" method="POST">
-          <div class="sign-up-container">
-            <h1>
-              Let's do this!
+          <div class="sign-up-container subtle-shadow">
+            <h1 class="no-margin">
+              What are you waiting for? Let's do this!
             </h1>
-            <ul class="sign-up-fields right-width">
+            <ul class="sign-up-fields thin-right-width">
               <li>
-                <label for="first-name">FIRST NAME</label>
-                <input type="text" name="user-first-name" id="first-name" />
+                <label for="first-name">First name</label>
+                <input type="text" name="user-first-name" id="first-name" required />
               </li>
               <li>
-                <label for="last-name">LAST NAME</label>
-                <input type="text" name="user-last-name" id="last-name" />
+                <label for="last-name">Last name</label>
+                <input type="text" name="user-last-name" id="last-name" required />
               </li>
               <li>
-                <label for="email">EMAIL</label>
-                <input type="email" name="user-email" id="last-name" />
+                <label for="email">Email</label>
+                <input type="email" name="user-email" id="email" required />
               </li>
               <li>
-                <label for="phone-number">PHONE NUMBER</label>
-                <input type="tel" name="user-phone" id="phone-number" />
+                <label for="phone-number">Phone number</label>
+                <input type="tel" name="user-phone" id="phone-number" required />
               </li>
               <li>
-                <label for="password">PASSWORD</label>
-                <input type="password" name="user-password" id="password" />
+                <label for="password">Password</label>
+                <input type="password" name="user-password" id="password" required />
               </li>
               <li>
-                <label for="password">CONFIRM PASSWORD</label>
-                <input type="password" name="user-password" id="password" />
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" name="confirm-user-password" id="confirm-password" required />
               </li>
             </ul>
           </div>
           
-          <button class="submit-form left-offset" type="submit">Create Account</button>
+          <button class="submit-form left-offset subtle-shadow" type="submit">Create Account</button>
         </form>
 
-        <p class="left-offset">Already have an account? <a class="sign-in" href="index.html">Sign in</a></p>
+        <p class="left-offset">Already have an account? <a class="sign-in" href="index.html">Log in</a></p>
       </div>
 
     </div>
