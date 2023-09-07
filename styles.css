@@ -16,6 +16,10 @@ a {
   text-decoration: none;
 }
 
+a.sign-in:hover {
+  color: var(--text-color-darker)
+}
+
 a.sign-in {
   color: var(--text-color-dark);
 }
