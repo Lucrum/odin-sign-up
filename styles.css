@@ -1,7 +1,8 @@
 :root {
   font-family: 'Roboto', sans-serif;
   --text-color-light: cornsilk;
-  --text-color-dark: #D8532A;
+  --text-color-dark: #d8532a;
+  --text-color-darker: #c23d14;
   --left-offset: 3rem;
   --soft-corner-radius: 0.3rem;
   font-size: medium;
@@ -83,6 +84,24 @@ div.sign-up-container {
   margin-top: 2rem;
 }
 
+div.logo {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: bold;
+  position: absolute;
+  text-align: center;
+  font-size: 5rem;
+  top: 15%;
+  width: 100%;
+  color: var(--text-color-light);
+  background-color: rgba(0, 0, 0, 0.1);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
 form > button.submit-form {
   color: var(--text-color-light);
   background-color: var(--text-color-dark);
@@ -132,6 +151,19 @@ li > input[type=password] {
   height: 2rem;
 }
 
+li > input:hover {
+  border: 1px solid gray;
+  background-color: #f6f6f6;
+}
+
+img.svg-logo {
+  height: 5rem;
+}
+
+button.submit-form:hover {
+  background-color: var(--text-color-darker);
+}
+
 /* classes */
 
 .no-margin {
@@ -141,20 +173,6 @@ li > input[type=password] {
 .flex-column {
   display: flex;
   flex-direction: column;
-}
-
-.logo {
-  font-family: 'Fira Sans', sans-serif;
-  font-weight: bold;
-  position: absolute;
-  text-align: center;
-  font-size: 5rem;
-  top: 15%;
-  width: 100%;
-  color: var(--text-color-light);
-  background-color: rgba(0, 0, 0, 0.1);
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 
 .right-width {
